@@ -1,0 +1,705 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hidden
+{
+    display: none;
+}
+
+@font-face
+{
+    font-family: "onyx";
+    src: url(../assets/sardonyx.otf);
+}
+
+html
+{
+    height: 100%;
+}
+
+h2
+{
+    letter-spacing: 1px;
+}
+
+body.home
+{
+    background-image:url(../images/scroll_banner.jpg);
+    background-repeat: repeat-x;
+    background-color: lightgray;
+    position: relative;
+}
+
+
+.aboutBody
+{
+    margin-bottom: 60px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aboutBody h2
+{
+    font-family: "onyx";
+    font-size: 78px;
+}
+
+.aboutBody p
+{
+    padding: 0 20px 0 20px;
+}
+
+.aboutBody img
+{
+    margin-bottom: 10px;
+}
+
+body.about
+{
+    /*background-image: url(../images/scroll_banner.jpg);
+    background-repeat: no-repeat;
+    background-color: black;*/
+    background-color: lightgrey;
+}
+
+body.work
+{
+    background-color: lightgrey;
+}
+
+body.contact
+{
+    height: 100%;
+}
+
+header
+{
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 3px solid #00aeef;
+}
+
+#logo
+{
+    height: 50px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+
+.navMenu
+{
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    display: inline-block;
+}
+
+#hamBtn
+{
+    position: relative;
+    cursor: pointer;
+    width: 40px;    
+}
+
+.dropDownContent
+{
+    right: 30px;
+    display: none;
+    position: absolute;
+    background-color: #303030;
+    min-width: 120px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropDownContent a
+{
+    color: lightgray;
+    font-size: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #303030;
+}
+
+
+.dropDownContent a:hover
+{
+    background-color: #3D3D3D;
+    color: #00b7ff;
+    border: 1px solid #00b7ff;
+}
+
+.dropDownContent a:active
+{
+    background-color: #464646;
+}
+
+.navMenu:hover .dropDownContent
+{
+    display: block; 
+}
+
+#bannerCon
+{
+    height: 1000px;
+}
+
+.banner
+{
+
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.fadeTextCon
+{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.bannerTxtWrap
+{
+    color: #292929;
+    position: absolute;
+    font-size: 4vw;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 0 17vw 0 17vw;
+    border-bottom: 3px solid #292929;
+    overflow: hidden;
+    text-align: center;
+    font-family: "onyx";
+}
+
+.homeItemCon
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.homeItem
+{
+    justify-content: space-around;
+    width: 20vw;
+    height: 50px;
+    margin-top: 150px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.homeItem a
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: #303030;
+}
+
+.homeItem a:hover
+{
+    color: #00b7ff;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
+    font-weight: bold;
+}
+
+.workCon
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    clear: both;
+    margin-bottom: 80px;
+}
+
+.imgCon
+{
+    height: 500px;
+    width: 15%;
+    min-width: 200px;
+    /*background-image: url(../images/01.jpg);
+    background-position: center;
+    background-size: auto 500px;*/
+    margin-bottom: 66px;
+}
+
+#lightbox
+{
+    text-align: center;
+    overflow-y: auto;
+}
+
+.lbContent
+{
+    max-width: 60vw;
+    min-width: 300px;
+}
+
+
+/*FALLBACK*/
+#imgCon01
+{
+    background-image: url(../images/01.jpg);
+    background-position: center;
+    background-size: auto 500px;
+}
+
+#imgCon02
+{
+    background-image: url(../images/02.jpg);
+    background-position: center;
+    background-size: auto 500px;
+}
+
+#imgCon03
+{
+    background-image: url(../images/03.jpg);
+    background-position: center;
+    background-size: auto 500px;
+}
+
+#imgCon04
+{
+    background-image: url(../images/04.png);
+    background-position: center;
+    background-size: auto 500px;
+}
+
+#imgCon05
+{
+    background-image: url(../images/05.jpg);
+    background-position: center;
+    background-size: auto 500px;
+}
+
+#imgCon06
+{
+    background-image: url(../images/06.jpg);
+    background-position: center;
+    background-size: auto 500px;
+}
+
+.imgCon:hover
+{
+    transform: scale(1.1, 1.1);
+}
+
+.aboutCon
+{
+    display: inline-block;
+    margin-top: 10vh;
+    clear: both;
+    color: #303030;
+}
+
+.aboutTitle
+{
+    float: right;
+    text-align: center;
+    width: 600px;
+    margin-right: 20px;
+}
+
+.aboutTitle h2
+{
+    font-family: "onyx";
+    font-size: 78px;
+}
+
+.aboutTitle p
+{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#aboutPhoto
+{
+    margin-left: 100px;
+    width: 300px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+#progIconCon
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.progIcon
+{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.workTitleWrap
+{
+    clear: both;
+    text-align: center;
+    margin-bottom: 50px
+
+}
+
+.workTitleWrap h3
+{
+    font-family: "onyx";
+    font-size: 80px;
+    color: #303030;
+    border-bottom: 2px solid #00b7ff;
+}
+
+#lightbox
+{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.closeBTN
+{
+    position: absolute;
+    font-size: 65px;
+    font-weight: bold;
+    top: 30px;
+    right: 50px;
+    color: #00b7ff;
+}
+
+.closeBTN:hover
+{
+    cursor: pointer;
+}
+
+.contactForm
+{
+    margin-top: 60px;
+    height: 90%;
+}
+
+.contactForm label
+{
+    font-size: 24px;
+}
+
+.contactForm input
+{
+    box-shadow: 2px 2px 5px #444444;
+} 
+
+#message
+{
+    box-shadow: 2px 2px 5px #444444;
+}
+
+#formSubmit
+{
+    padding: 15px 20px 15px 20px;
+    border-radius: 12px;
+    border: 0px;
+    background-color: #00b7ff;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 0px;
+}
+
+#formSubmit:hover
+{
+    background-color: #1CBFFA;
+    box-shadow:-2px -2px 2px grey, 2px -2px 2px grey, -2px 2px 2px grey, 2px 2px 2px grey;  
+}
+
+#formSubmit:active
+{
+    background-color: #00A8E6;
+}
+
+#formDesc
+{
+    max-width: 450px;
+    padding: 5px;
+    float: right;
+    background-color: #e4e4e4;
+}
+
+#formDesc p
+{
+    color: #00aeef;
+    font-weight: bold;
+}
+
+#contact
+{
+    padding-bottom: 10px;
+    border-bottom: 5px solid #e4e4e4;
+}
+
+footer
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-top: 3px solid #00aeef;
+}
+
+#footerNav
+{
+    margin-left: 100px;
+    padding-top: 15px;
+    float: left;
+}
+
+#footerNav li
+{
+    margin-right: 40px;
+    display: inline;
+}
+
+#footerNav li a
+{
+    color: rgb(14, 14, 14);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#footerNav li a:hover
+{
+    color: #00b7ff;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
+}   
+
+#reworkNote
+{
+    text-align: center;
+    margin-top: 50px;
+    color: red;
+    font-size: 20px;
+}
+
+
+/*MEDIA QUERY START
+
+@media screen and (max-width: 1000px)
+{
+    
+
+    .homeItem a
+    {
+        display: none;
+    }
+
+    .bannerTxtWrap
+    {
+        display: none;
+        align-content: center;
+    }
+
+    body.home
+    {
+        background: none;
+    }
+}
+*/
+
+
+@media screen and (max-width: 1650px)
+{
+
+    .aboutCon
+    {
+        text-align: center;
+    }
+
+    #aboutPhoto
+    {
+        margin-left: 0px;
+    }
+
+    .aboutTitle
+    {
+        display: inline;
+        margin-right: 0px;
+        float: none;
+    }
+
+    #aboutphoto
+    {
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 1500px)
+{
+
+    .aboutTitle
+    {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .aboutCon
+    {
+        text-align: center;
+    }
+
+    #aboutPhoto
+    {      
+        text-align: center;
+    }
+
+    .aboutBody h2
+    {
+        clear: both;
+    }
+
+    .homeItem
+    {
+        padding-top: 15px;
+    }
+
+    .workCon
+    {
+        justify-content: center;
+    }
+
+    .imgCon
+    {
+       margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1068px)
+{
+    .fadeTextCon
+    {
+        margin: 0 auto;
+        height: 50%;
+    }
+
+    .homeItem a
+    {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    /*body.home
+    {
+        background-image:url(../images/scroll_bannerM.jpg); 
+    }*/
+
+    .bannerTxtWrap
+    {
+        font-size: 6vw;
+        border: none;
+    }
+
+    footer
+    {
+        height: 140px;
+    }
+    
+    #footerCon
+    {
+        text-align: center;
+    }
+
+    #footerNav
+    {
+        float: none;
+        margin-left: 0px;
+    }
+
+    #footerNav li
+    {
+        text-align: center;
+        display: block;
+        margin-right: 0px;
+    }
+
+    #footerNav li a
+    {
+        margin: 0 auto;
+        padding: 0 20px 0 20px;
+        border-right: 2px solid #00b7ff;
+        border-left: 2px solid #00b7ff;
+
+    }
+}
+
+@media screen and (max-width: 540px)
+{
+    #logo
+    {
+        height: 50px;
+        margin-left: 10px
+    }
+
+    .navMenu
+    {
+        margin-right: 10px;
+    }
+    
+    .bannerTxtWrap
+    {
+        font-size: 46px;
+    }
+
+    .homeItem a
+    {
+        display: none;
+    }
+
+    #aboutPhoto
+    {
+        width: 250px;
+    }
+
+    .aboutTitle p
+    {
+        font-size: 20px;
+    }
+
+    .aboutBody p
+    {
+        font-size: 20px;
+    }
+
+    #formDesc
+    {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 400px)
+{   
+    .aboutTitle
+    {
+        width: 280px;
+    }
+
+    .progIcon
+    {
+        margin-bottom: 0px;
+    }
+    
+    footer
+    {
+        margin-top: 70px;
+    }
+}
